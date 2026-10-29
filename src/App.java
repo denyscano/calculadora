@@ -49,19 +49,19 @@ public class App {
     }
 
     public static double sumar(double primerNumero, double segundoNumero) {
-        double resultado = 0;
+        double resultado = primerNumero + segundoNumero;
 
         return resultado;
     }
 
     public static double restar(double primerNumero, double segundoNumero) {
-        double resultado = 0;
+        double resultado = primerNumero - segundoNumero;
 
         return resultado;
     }
 
     public static double multiplicar(double primerNumero, double segundoNumero) {
-        double resultado = 0;
+        double resultado = primerNumero * segundoNumero;
 
         return resultado;
     }
