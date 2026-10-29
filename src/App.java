@@ -1,4 +1,4 @@
-
+//cambio tonto
 public class App {
 
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class App {
     }
 
     public static double sumar(double primerNumero, double segundoNumero) {
-        double resultado = 0;
+        double resultado = primerNumero+segundoNumero;
 
         return resultado;
     }
@@ -27,7 +27,7 @@ public class App {
     }
 
     public static double multiplicar(double primerNumero, double segundoNumero) {
-        double resultado = 0;
+        double resultado =  primerNumero * segundoNumero;
 
         return resultado;
     }
