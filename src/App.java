@@ -35,6 +35,38 @@ public class App {
             System.out.println("|           (C) 2026  TERMINAL No. 0042               |");
             System.out.println("+-----------------------------------------------------+" + RESET);
             System.out.println();
+            System.out.println(VERDE);
+            System.out.println("+----------------------------------------+");
+            System.out.println("|             MENU PRINCIPAL             |");
+            System.out.println("+----------------------------------------+");
+            System.out.println("|                                        |");
+            System.out.println("|   1. SUMAR                             |");
+            System.out.println("|   2. RESTAR                            |");
+            System.out.println("|   3. MULTIPLICAR                       |");
+            System.out.println("|   4. DIVIDIR                           |");
+            System.out.println("|                                        |");
+            System.out.println("|   5. SALIR                             |");
+            System.out.println("|                                        |");
+            System.out.println("+----------------------------------------+" + RESET);
+
+            boolean soloNumeros3 = false;
+            int operacion = 0;
+
+            while (!soloNumeros3) {
+                System.out.print(VERDE + "Seleccione que operacion quiere Realiza: " + RESET);
+                try {
+                    operacion = Integer.parseInt(leer.nextLine().trim());
+                    soloNumeros3 = true;
+                } catch (NumberFormatException e) {
+                    System.out.println(ROJO);
+                    System.out.println("+--------------------------------------------------+");
+                    System.out.println("|                                                  |");
+                    System.out.println("|    Entrada no válida. Introduce solo números.    |");
+                    System.out.println("|                                                  |");
+                    System.out.println("+--------------------------------------------------+" + RESET);
+                }
+            }
+            System.out.println();
 
             while (!soloNumeros1) {
                 System.out.print(VERDE + "Inserte el primer número: " + RESET);
@@ -57,38 +89,6 @@ public class App {
                 try {
                     segundoNumero = Double.parseDouble(leer.nextLine().trim());
                     soloNumeros2 = true;
-                } catch (NumberFormatException e) {
-                    System.out.println(ROJO);
-                    System.out.println("+--------------------------------------------------+");
-                    System.out.println("|                                                  |");
-                    System.out.println("|    Entrada no válida. Introduce solo números.    |");
-                    System.out.println("|                                                  |");
-                    System.out.println("+--------------------------------------------------+" + RESET);
-                }
-            }
-
-            System.out.println(VERDE);
-            System.out.println("+----------------------------------------+");
-            System.out.println("|             MENU PRINCIPAL             |");
-            System.out.println("+----------------------------------------+");
-            System.out.println("|                                        |");
-            System.out.println("|   1. SUMAR                             |");
-            System.out.println("|   2. RESTAR                            |");
-            System.out.println("|   3. MULTIPLICAR                       |");
-            System.out.println("|   4. DIVIDIR                           |");
-            System.out.println("|                                        |");
-            System.out.println("|   3. SALIR                             |");
-            System.out.println("|                                        |");
-            System.out.println("+----------------------------------------+" + RESET);
-
-            boolean soloNumeros3 = false;
-            int operacion = 0;
-
-            while (!soloNumeros3) {
-                System.out.print(VERDE + "Seleccione que operacion quiere Realiza:" + RESET);
-                try {
-                    operacion = Integer.parseInt(leer.nextLine().trim());
-                    soloNumeros3 = true;
                 } catch (NumberFormatException e) {
                     System.out.println(ROJO);
                     System.out.println("+--------------------------------------------------+");
@@ -135,7 +135,7 @@ public class App {
 
             System.out.println("Resultado: " + FONDO_ROJO + BLANCO + NEGRITA + " " + resultado + " " + RESET);
             System.out.println();
-            System.out.println(ROJO + "--------------------------------------------------FIN DEL PROGRAMA-----------------------------------------------------------" + RESET);
+            System.out.println(ROJO + "--------------------------------------------------FIN DE LA OPERACION-----------------------------------------------------------" + RESET);
             System.out.println();
 
         }
