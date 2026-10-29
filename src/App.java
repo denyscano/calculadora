@@ -21,7 +21,7 @@ public class App {
     }
 
     public static double restar(double primerNumero, double segundoNumero) {
-        double resultado = 0;
+        double resultado = primerNumero - segundoNumero;
 
         return resultado;
     }
