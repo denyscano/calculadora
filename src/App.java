@@ -1,4 +1,6 @@
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
@@ -11,6 +13,38 @@ public class App {
 
         // Ejemplo para llamar a una función:
         // System.out.println("Resultado: " + sumar(primerNumero, segundoNumero));
+        Scanner leer = new Scanner(System.in);
+        boolean soloText = false;
+        int primerNumero;
+        int segundoNumero;
+        try {
+            do {
+                System.out.println("Inserte el primer número:");
+                primerNumero = Integer.parseInt(leer.nextLine().trim());
+                System.out.println("Inserte el primer número:");
+                segundoNumero = Integer.parseInt(leer.nextLine().trim());
+            } while (!soloText);
+            int operacion = Integer.parseInt(leer.nextLine().trim());
+            switch (operacion) {
+            case 1:
+                sumar(primerNumero, segundoNumero);
+                break;
+            case 2:
+                restar(primerNumero, segundoNumero);
+                break;
+            case 3:
+                multiplicar(primerNumero, segundoNumero);
+                break;
+            case 4:
+                dividir(primerNumero, segundoNumero);
+                break;
+            default:
+                System.out.println();
+            }
+
+        } catch (ArithmeticException e) {
+
+        }
 
     }
 
@@ -32,9 +66,8 @@ public class App {
         return resultado;
     }
 
-    public static double dividir(double primerNumero, double segundoNumero) {
-        double resultado = 0;
+    public static double dividir(double primerNumero, double segundoNumero) throws ArithmeticException {
 
-        return resultado;
+        return primerNumero / segundoNumero;
     }
 }
