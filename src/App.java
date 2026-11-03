@@ -52,12 +52,14 @@ public class App {
             boolean soloNumeros3 = false;
             int operacion = 0;
 
-            while (!soloNumeros3) {
+            while (!soloNumeros3 && !salir) {
                 System.out.print(VERDE + "Seleccione que operacion quiere Realiza: " + RESET);
                 try {
                     operacion = Integer.parseInt(leer.nextLine().trim());
-                    if (operacion > 0 && operacion < 6) {
+                    if (operacion > 0 && operacion < 5) {
                         soloNumeros3 = true;
+                    } else if (operacion == 5) {
+                        salir = true;
                     } else {
                         System.out.println(ROJO);
                         System.out.println("+--------------------------------------------------+");
@@ -77,8 +79,7 @@ public class App {
                 }
             }
             System.out.println();
-
-            while (!soloNumeros1) {
+            while (!soloNumeros1 && !salir) {
                 System.out.print(VERDE + "Inserte el primer número: " + RESET);
                 try {
                     primerNumero = Double.parseDouble(leer.nextLine().trim());
@@ -93,7 +94,7 @@ public class App {
 
                 }
             }
-            while (!soloNumeros2) {
+            while (!soloNumeros2 && !salir) {
                 System.out.println();
                 System.out.print(VERDE + "Inserte el segundo número: " + RESET);
                 try {
@@ -142,13 +143,20 @@ public class App {
                     System.out.println("|     debes seleccionar una opcion entre 1 y 4     |");
                     System.out.println("+--------------------------------------------------+" + RESET);
             }
-
-            System.out.println("Resultado: " + FONDO_ROJO + BLANCO + NEGRITA + " " + resultado + " " + RESET);
-            System.out.println();
-            System.out.println(ROJO
-                    + "--------------------------------------------------FIN DE LA OPERACION-----------------------------------------------------------"
-                    + RESET);
-            System.out.println();
+            if (!salir) {
+                System.out.println("Resultado: " + FONDO_ROJO + BLANCO + NEGRITA + " " + resultado + " " + RESET);
+                System.out.println();
+                System.out.println(ROJO
+                        + "--------------------------------------------------FIN DE LA OPERACION-----------------------------------------------------------"
+                        + RESET);
+                System.out.println();
+            } else {
+                System.out.println();
+                System.out.println(ROJO
+                        + "--------------------------------------------------FIN DEL PROGRAMA-----------------------------------------------------------"
+                        + RESET);
+                System.out.println();
+            }
 
         }
         leer.close();
