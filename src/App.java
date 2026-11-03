@@ -56,7 +56,17 @@ public class App {
                 System.out.print(VERDE + "Seleccione que operacion quiere Realiza: " + RESET);
                 try {
                     operacion = Integer.parseInt(leer.nextLine().trim());
-                    soloNumeros3 = true;
+                    if (operacion > 0 && operacion <= 0) {
+                        soloNumeros3 = true;
+                    } else {
+                        System.out.println(ROJO);
+                        System.out.println("+--------------------------------------------------+");
+                        System.out.println("|                                                  |");
+                        System.out.println("|               Entrada no válida.                 |");
+                        System.out.println("|        La opcion debe estar entre 1 y 5          |");
+                        System.out.println("|                                                  |");
+                        System.out.println("+--------------------------------------------------+" + RESET);
+                    }
                 } catch (NumberFormatException e) {
                     System.out.println(ROJO);
                     System.out.println("+--------------------------------------------------+");
@@ -122,7 +132,7 @@ public class App {
                         System.out.println("+--------------------------------------------------+" + RESET);
                     }
                     break;
-                case 0:
+                case 5:
                     salir = true;
                     break;
                 default:
