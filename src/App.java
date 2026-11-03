@@ -56,7 +56,7 @@ public class App {
                 System.out.print(VERDE + "Seleccione que operacion quiere Realiza: " + RESET);
                 try {
                     operacion = Integer.parseInt(leer.nextLine().trim());
-                    if (operacion > 0 && operacion < 6) {
+                    if (operacion > 0 && operacion <= 5) {
                         soloNumeros3 = true;
                     } else {
                         System.out.println(ROJO);
@@ -145,9 +145,7 @@ public class App {
 
             System.out.println("Resultado: " + FONDO_ROJO + BLANCO + NEGRITA + " " + resultado + " " + RESET);
             System.out.println();
-            System.out.println(ROJO
-                    + "--------------------------------------------------FIN DE LA OPERACION-----------------------------------------------------------"
-                    + RESET);
+            System.out.println(ROJO + "--------------------------------------------------FIN DE LA OPERACION-----------------------------------------------------------" + RESET);
             System.out.println();
 
         }
