@@ -132,8 +132,8 @@ git commit -m "Merge branch 'develop' of github.com:denyscano/calculadora into d
 ```
 ## Autor
 
-[Elena M. Gonzales](https://github.com/elenaxf)
-[Denys Sifonte](https://github.com/denyscano)
-[Pablo Martinez](https://github.com/Ska-sudosu)
-[Roberto Guisado](https://github.com/robertoguisado1)
+- [Elena M. Gonzales](https://github.com/elenaxf)
+- [Denys Sifonte](https://github.com/denyscano)
+- [Pablo Martinez](https://github.com/Ska-sudosu)
+- [Roberto Guisado](https://github.com/robertoguisado1)
 
