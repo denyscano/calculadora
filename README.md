@@ -98,10 +98,10 @@ calculadora/
 | `multiplicar(a, b)` | Devuelve `a * b` |
 | `dividir(a, b)` | Devuelve `a / b`; lanza `ArithmeticException` si `b` es 0 |
 
-## Autor
+## Autores
 
-[Elena M. Gonzales](https://github.com/elenaxf)
-[Denys Sifonte](https://github.com/denyscano)
-[Pablo Martinez](https://github.com/Ska-sudosu)
-[Roberto Guisado](https://github.com/robertoguisado1)
+- [Elena M. Gonzales](https://github.com/elenaxf)
+- [Denys Sifonte](https://github.com/denyscano)
+- [Pablo Martinez](https://github.com/Ska-sudosu)
+- [Roberto Guisado](https://github.com/robertoguisado1)
 
