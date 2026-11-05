@@ -1,4 +1,4 @@
-# Calculadora en Terminal (Java)
+# Calculadora (Java)
 
 Calculadora de consola desarrollada en Java que realiza las cuatro operaciones matemáticas básicas mediante un menú interactivo con colores ANSI.
 
