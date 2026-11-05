@@ -100,7 +100,7 @@ calculadora/
 
 ## Autores
 
-- [Elena M. Gonzales](https://github.com/elenaxf)
+- [Elena M. Gonzalez](https://github.com/elenaxf)
 - [Denys Sifonte](https://github.com/denyscano)
 - [Pablo Martinez](https://github.com/Ska-sudosu)
 - [Roberto Guisado](https://github.com/robertoguisado1)
