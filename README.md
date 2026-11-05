@@ -1,4 +1,4 @@
-# Calculadora (Java)
+# Calculadora en Terminal (Java)
 
 Calculadora de consola desarrollada en Java que realiza las cuatro operaciones matemáticas básicas mediante un menú interactivo con colores ANSI.
 
@@ -7,8 +7,9 @@ Calculadora de consola desarrollada en Java que realiza las cuatro operaciones m
 - Menú interactivo que se repite hasta que el usuario elige salir
 - Operaciones: suma, resta, multiplicación y división
 - Soporta números decimales (usa `double`)
-- Validación de entradas para las opciones: solo números entre 1 y 5
+- Validación de entradas: solo números y opciones entre 1 y 5
 - Control de la división entre cero
+- Mensajes de error y resultados con colores para facilitar la lectura
 
 ## Requisitos
 
@@ -98,10 +99,41 @@ calculadora/
 | `multiplicar(a, b)` | Devuelve `a * b` |
 | `dividir(a, b)` | Devuelve `a / b`; lanza `ArithmeticException` si `b` es 0 |
 
-## Autores
+### 1. El conflicto
 
-- [Elena M. Gonzales](https://github.com/elenaxf)
-- [Denys Sifonte](https://github.com/denyscano)
-- [Pablo Martinez](https://github.com/Ska-sudosu)
-- [Roberto Guisado](https://github.com/robertoguisado1)
+Al hacer `git push` de la rama develop`, Git marcó el conflicto en `app.java`:
+
+```text
+<<<<<<< HEAD
+    if (operacion > 0 && operacion <= 5) {
+=======
+if (operacion > 0 && operacion < 6) {
+>>>>>>> develop
+```
+
+- `<<<<<<< HEAD`: nuestros cambios (rama actual).
+- `=======`: separador.
+- `>>>>>>> develop`: cambios de la rama que se fusiona.
+
+### 2. La resolución
+
+Conservamos lo que vino de develop(una modificacion de Pablo), eliminamos los marcadores y guardamos:
+
+```markdown
+if (operacion > 0 && operacion < 6) {
+```
+
+### 3. Comandos usados
+
+```bash
+git push develop
+# corrigue rango de la operacion
+git commit -m "Merge branch 'develop' of github.com:denyscano/calculadora into develop"
+```
+## Autor
+
+[Elena M. Gonzales](https://github.com/elenaxf)
+[Denys Sifonte](https://github.com/denyscano)
+[Pablo Martinez](https://github.com/Ska-sudosu)
+[Roberto Guisado](https://github.com/robertoguisado1)
 
