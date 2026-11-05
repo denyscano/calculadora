@@ -7,7 +7,7 @@ Calculadora de consola desarrollada en Java que realiza las cuatro operaciones m
 - Menú interactivo que se repite hasta que el usuario elige salir
 - Operaciones: suma, resta, multiplicación y división
 - Soporta números decimales (usa `double`)
-- Validación de entradas: solo números entre 1 y 5
+- Validación de entradas para las opciones: solo números entre 1 y 5
 - Control de la división entre cero
 
 ## Requisitos
