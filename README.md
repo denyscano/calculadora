@@ -101,7 +101,7 @@ calculadora/
 
 ### 1. El conflicto
 
-Al hacer `git push` de la rama develop`, Git marcó el conflicto en `app.java`:
+Al hacer `git push`, Git marcó el conflicto en `app.java`:
 
 ```text
 <<<<<<< HEAD
